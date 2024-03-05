@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import BarChart from "./components/BarChart";
+import LineChart from "./components/LineChart";
 import { UserData } from "./Data";
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
       <div style={{ width: 700 }}>
         <BarChart chartData={userData} />
       </div>
+      <div style={{ width: 700 }}>
+        <LineChart chartData={userData}/>
+      </div>
+
     </div>
   );
 }
