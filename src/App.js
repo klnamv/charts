@@ -3,6 +3,7 @@ import "./App.css";
 import BarChart from "./components/BarChart";
 import LineChart from "./components/LineChart";
 import PieChart from "./components/PieChart";
+import PolarChart from './components/PolarChart';
 import { UserData } from "./Data";
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
       </div>
       <div style={{ width: 500}}>
         <PieChart chartData={userData}/>
+      </div>
+      <div style={{ width: 500}}>
+        <PolarChart chartData={userData} />
       </div>
     </div>
   );
